@@ -132,8 +132,7 @@ export default class SignupPage extends Component {
             Already have an account?{' '}
             <Text
               style={styles.link}
-              onPress={() =>
-                this.props.navigation.navigate('Login')
+              onPress={() => this.props.navigation.navigate('Login')
               }
             >
               Login
