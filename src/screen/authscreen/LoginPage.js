@@ -13,16 +13,17 @@
     }
 
     handleLogin = () => {
-        const { username, password } = this.state;
-        const cleanUsername = username.trim().toLowerCase();
-        const cleanPassword = password.trim().toLowerCase();
+        const { ausername, userpassword } = this.state;
+        const username = ausername.trim();
+        const password = userpassword.trim();
 
 
-        // demo purposes (soon will intergrate api once done)
-        if (cleanUsername === 'admin' && cleanPassword === 'admin') {
+        // for demo purposes only(soon will intergrate api once done)
+        if (username === 'admin' && password === 'admin') {
         Alert.alert('Login Successful', `Welcome, ${username.trim()}!`, [
             {
             text: 'OK',
+            // direct to home page nigaa
             onPress: () => this.props.navigation.navigate('Home'),
             },
         ]);
@@ -122,7 +123,7 @@
     logo: {
         width: 200,
         height: 200,
-        marginBottom: 20,
+        marginBottom: 30,
     },
     inputWrapper: {
         width: '90%',
