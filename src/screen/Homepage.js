@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
-import Navbar from '../components/navbar'; // adjust path if needed
+import Navbar from '../components/navbar'; 
 
 export default function Homepage() {
   return (
     <SafeAreaView style={styles.container}>
-      
+
 
       <View style={styles.content}>
         <Text style={styles.welcomeText}>WELCOME JOSHUA!</Text>
@@ -19,9 +19,7 @@ export default function Homepage() {
       </View>
 
 
-      <View style={styles.navbarWrapper}>
-        <Navbar />
-      </View>
+      <Navbar />
 
     </SafeAreaView>
   );
@@ -31,15 +29,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    justifyContent: 'space-between', 
+    justifyContent: 'space-between', // content top, navbar bottom
   },
   content: {
     padding: 20,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  navbarWrapper: {
-    marginBottom: 0, 
   },
   welcomeText: {
     fontSize: 24,

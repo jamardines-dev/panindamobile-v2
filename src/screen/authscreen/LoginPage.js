@@ -13,13 +13,13 @@
     }
 
     handleLogin = () => {
-        const { ausername, userpassword } = this.state;
-        const username = ausername.trim();
-        const password = userpassword.trim();
+        const { username, password } = this.state;
+        const cleanUsername = (username || '').trim();
+        const cleanPassword = (password || '').trim();
 
 
         // for demo purposes only(soon will intergrate api once done)
-        if (username === 'admin' && password === 'admin') {
+        if (cleanUsername === 'admin' && cleanPassword === 'admin') {
         Alert.alert('Login Successful', `Welcome, ${username.trim()}!`, [
             {
             text: 'OK',
@@ -123,7 +123,7 @@
     logo: {
         width: 200,
         height: 200,
-        marginBottom: 30,
+        marginBottom: 0,
     },
     inputWrapper: {
         width: '90%',
