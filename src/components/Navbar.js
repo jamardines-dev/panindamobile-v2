@@ -36,12 +36,12 @@
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '90%',          // rectangle width (less than screen)
-        maxWidth: 400,         // optional limit on large screens
+        width: '90%',          
+        maxWidth: 400,         
         height: 60,
-        paddingHorizontal: 20, // space inside the rectangle
+        paddingHorizontal: 20,
         backgroundColor: '#fff',
-        borderRadius: 15,      // rounded corners
+        borderRadius: 15,      
         borderWidth: 1,
         borderColor: '#ccc',
         shadowColor: '#000',   // optional shadow

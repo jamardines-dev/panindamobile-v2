@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
 import Navbar from '../components/navbar'; 
+import SearchBar from '../components/searchBar';
 
 export default function Homepage() {
   return (
@@ -8,6 +9,7 @@ export default function Homepage() {
 
 
       <View style={styles.content}>
+        <SearchBar/>
         <Text style={styles.welcomeText}>WELCOME JOSHUA!</Text>
 
         <View style={styles.cell}>
@@ -40,16 +42,22 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     color: '#FEAC00',
-    marginBottom: 20,
+    marginBottom: 15,
   },
   cell: {
     width: '100%',
     height: 80,
     borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 10,
+    borderRadius: 15,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 15,
+    backgroundColor: '#fff',
+    borderColor: '#ccc',
+    shadowColor: '#000',   //shadow
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,   
   },
 });

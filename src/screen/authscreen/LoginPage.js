@@ -13,6 +13,8 @@
     }
 
     handleLogin = () => {
+
+        //static only
         const { username, password } = this.state;
         const cleanUsername = (username || '').trim();
         const cleanPassword = (password || '').trim();
