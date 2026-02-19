@@ -12,7 +12,7 @@ export default function Homepage() {
 
       <View style={styles.topContent}>
         <SearchBar />
-        <View style={styles.cell}>
+        <View>
           <ProductSlideShow />
         </View>
       </View>
@@ -26,7 +26,6 @@ export default function Homepage() {
         <ProductCard />
         <ProductCard />
       </ScrollView>
-
 
       <Navbar />
 
@@ -50,6 +49,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 15,
     backgroundColor: '#fff',
     borderColor: '#ccc',
     shadowColor: '#000',   
