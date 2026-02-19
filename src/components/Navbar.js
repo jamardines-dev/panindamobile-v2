@@ -1,6 +1,6 @@
     import { Ionicons } from '@expo/vector-icons';
     import React from 'react';
-    import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+    import { SafeAreaView, View, StyleSheet, TouchableOpacity } from 'react-native';
 
     export default function Navbar() {
     return (
@@ -28,9 +28,9 @@
 
     const styles = StyleSheet.create({
     safeArea: {
-        backgroundColor: 'transparent', // makes background around the rectangle clear
+        backgroundColor: 'transparent', 
         paddingBottom: 20,
-        alignItems: 'center', // centers the rectangle horizontally
+        alignItems: 'center', 
     },
     container: {
         flexDirection: 'row',

@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
 export default class SearchBar extends Component {
+    /**
+     * 
+     *   for later dynamic search bar once this ui done
+     *   full dynamic function with backend integrated
+     * 
+     */
+
   render() {
     return (
       <View style={styles.container}>
