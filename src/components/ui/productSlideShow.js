@@ -1,51 +1,66 @@
-import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Dimensions } from 'react-native';
+    import React from 'react';
+    import { View, StyleSheet, ScrollView, Dimensions, Image } from 'react-native';
 
-const screenWidth = Dimensions.get('window').width;
+    const screenWidth = Dimensions.get('window').width;
 
-export default function ProductSlideShow() {
-  return (
-    <ScrollView
-      horizontal
-      pagingEnabled          // snaps to each slide
-      showsHorizontalScrollIndicator={false} 
-      style={styles.scrollView}
-    >
-      {/* Slide 1 */}
-      <View style={styles.slideshowcard}>
-        <Text>Slide 1</Text>
-      </View>
+    export default function ProductSlideShow() {
+    return (
+        <ScrollView
+        horizontal
+        pagingEnabled
+        showsHorizontalScrollIndicator={false} 
+        contentContainerStyle={{}} // remove paddingHorizontal
+        >
 
-      {/* Slide 2 */}
-      <View style={styles.slideshowcard}>
-        <Text>Slide 2</Text>
-      </View>
 
-      {/* Slide 3 */}
-      <View style={styles.slideshowcard}>
-        <Text>Slide 3</Text>
-      </View>
-    </ScrollView>
-  );
-}
+        <View style={styles.slideshowcard}>
+            <Image
+            source={require('../../assets/images/logo_paninda.png')}
+            style={styles.logo}
+            />
+        </View>
 
-const styles = StyleSheet.create({
-  scrollView: {
-    width: '100%',
-  },
-  slideshowcard: {
-    width: screenWidth - 50,  // full width minus padding
-    height: 200,
-    marginRight: 15,
-    backgroundColor: '#fff',
-    borderRadius: 15,
-    padding: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    shadowColor: '#000',    
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
-  },
-});
+
+        <View style={styles.slideshowcard}>
+            <Image
+            source={require('../../assets/images/logo_paninda.png')}
+            style={styles.logo}
+            />
+        </View>
+
+
+        <View style={styles.slideshowcard}>
+            <Image
+            source={require('../../assets/images/logo_paninda.png')}
+            style={styles.logo}
+            />
+        </View>
+
+        </ScrollView>
+    );
+    }
+
+    const styles = StyleSheet.create({
+    slideshowcard: {
+        width: screenWidth,        // full screen width
+        height: 200,
+        marginRight: 0,            // no extra space between slides
+        backgroundColor: '#fff',
+        borderRadius: 15,
+        padding: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',    
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 3,
+
+    },
+    logo: {
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        resizeMode: 'cover',
+    },
+    });

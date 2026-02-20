@@ -15,8 +15,11 @@ const styles = StyleSheet.create({
     height: 200,
     marginBottom: 15,       // spacing between rows
     backgroundColor: '#fff',
+    borderColor: '#ccc',
     borderRadius: 15,
+    borderWidth: 1,
     padding: 10,
+    borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',    
@@ -24,5 +27,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,          
+  },
+  productImage: {
+
+    
   }
 });
