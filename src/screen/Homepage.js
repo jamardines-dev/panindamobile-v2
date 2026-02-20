@@ -25,6 +25,8 @@ export default function Homepage() {
         <ProductCard />
         <ProductCard />
         <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </ScrollView>
 
       <Navbar />
@@ -49,7 +51,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 15,
+    marginBottom: 5,
     backgroundColor: '#fff',
     borderColor: '#ccc',
     shadowColor: '#000',   
@@ -63,5 +65,6 @@ const styles = StyleSheet.create({
   productGrid: {
     flex: 1,
     backgroundColor: '#fff',
+
   },
 });
