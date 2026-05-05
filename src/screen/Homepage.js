@@ -11,7 +11,7 @@ export default function Homepage() {
 
 
       <View style={styles.topContent}>
-        <SearchBar />
+        <SearchBar />x``
         <View>
           <ProductSlideShow />
         </View>

@@ -4,7 +4,7 @@
     "slug": "panindamobile-v2.0",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/images/panindalogo.png",
+    "icon": "./assets/panindalogo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
